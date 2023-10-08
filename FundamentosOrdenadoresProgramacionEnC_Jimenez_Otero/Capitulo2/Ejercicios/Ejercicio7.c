@@ -10,6 +10,6 @@ int main()
     float r;
     printf("Ingrese el radio de la circunferencia: ");
     scanf("%f", &r);
-    printf("El radio de la circunferencia es: %f [unidades]\n", PI*r*r);
+    printf("El area de la circunferencia es: %f [unidades]\n", PI*r*r);
     return 0;
 }
