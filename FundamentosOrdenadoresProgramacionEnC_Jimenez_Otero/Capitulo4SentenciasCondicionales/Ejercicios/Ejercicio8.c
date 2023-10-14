@@ -17,10 +17,22 @@ int main()
     if (dia != 1)
     {
         printf("%02d/%02d/%d\n", dia-1, mes, año);
-    } else
+    } 
+    else if (mes==1)
     {
-        printf("viva");
+        printf("31/12/%d\n", año-1);
     }
-    
-    
+    else if (mes == 2 ||mes == 4 ||mes == 6 ||mes == 8 || mes ==9 ||mes ==11)
+    {
+        printf("31/%02d/%d\n", mes-1,año);
+    }
+    else if (mes == 5 || mes ==7 || mes ==10 || mes ==12)
+    {
+        printf("30/%02d/%d\n", mes-1, año);
+    }
+    else if (mes==3)
+    {
+        printf("28/%02d/%d\n",mes-1,año);
+    }
+    return 0;
 }
